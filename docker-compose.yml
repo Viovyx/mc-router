@@ -9,6 +9,7 @@ services:
         - API_BINDING=:80
         - API_KEY=${API_KEY}
         - ROUTES_CONFIG=/etc/router/config.json
+        - ALLOWED_ORIGINS=${APP_ALLOWED_ORIGINS}
       volumes:
         - mcrouter-config:/etc/router
       ports:
